@@ -130,3 +130,14 @@ if __name__ == "__main__":
             file = open("jarvis.txt", "r")
             print(file.read())
             speak(file.read(6))
+
+        elif "don't listen" in query or "stop listening" in query:
+            speak("for how much time you want to stop jarvis from listening commands")
+            a = int(takeCommand())
+            time.sleep(a)
+            print(a)
+
+        elif "change name" in query:
+            speak("What would you like to call me, Sir ")
+            newname = takeCommand()
+            speak("Thanks for naming me")
