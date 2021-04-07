@@ -141,3 +141,13 @@ if __name__ == "__main__":
             speak("What would you like to call me, Sir ")
             newname = takeCommand()
             speak("Thanks for naming me")
+
+        elif "what's your name" in query:
+            speak("I am")
+            speak(newname)
+            speak("sir")
+            print("I am", newname, "sir")
+
+        elif "quit" in query:
+            speak("powering off")
+            exit()
