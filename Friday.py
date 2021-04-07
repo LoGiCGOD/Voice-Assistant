@@ -124,3 +124,9 @@ if __name__ == "__main__":
                 file.write(note)
             else:
                 file.write(note)
+
+        elif "show note" in query:
+            speak("Showing Notes")
+            file = open("jarvis.txt", "r")
+            print(file.read())
+            speak(file.read(6))
